@@ -1,0 +1,31 @@
+<style>
+  /*animated cards*/
+.animated-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #efe5e5; /* Slightly lighter yellow on hover */
+}
+
+.scrollable-card {
+    max-height: 200px; !important;
+    overflow-y: auto;
+    box-sizing: border-box; /* Ensures padding doesn't increase height */
+    padding-right: 10px; /* Prevents scrollbar from overlapping content */
+    flex-grow: unset !important;
+}
+</style>
